@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #e0f7fa;
+  padding: 20px;
+}
+
+.cenario {
+  position: relative;
+  width: 200px;
+  margin: 50px auto;
+}
+
+.goteira {
+  font-size: 30px;
+  animation: pingar 1s infinite;
+  position: absolute;
+  left: 90px;
+  top: 0;
+}
+
+@keyframes pingar {
+  0% { top: 0; opacity: 1; }
+  100% { top: 100px; opacity: 0; }
+}
+
+.balde {
+  width: 100px;
+  height: 120px;
+  border: 4px solid #555;
+  border-radius: 0 0 40px 40px;
+  margin: 130px auto 0;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+
+.agua {
+  width: 100%;
+  height: 0;
+  background: #00bcd4;
+  position: absolute;
+  bottom: 0;
+  transition: height 0.5s;
+}
+
+.gota-real {
+  position: absolute;
+  top: 0;
+  left: 95px;
+  font-size: 30px;
+  animation: cair 1s linear forwards;
+}
+
+@keyframes cair {
+  0% { top: 0; opacity: 1; }
+  100% { top: 100px; opacity: 0; }
+}
+.gota-animada {
+  position: absolute;
+  top: 0;
+  left: 95px;
+  font-size: 30px;
+  animation: cair 1s linear forwards;
+}
+
+@keyframes cair {
+  0% { top: 0; opacity: 1; }
+  100% { top: 100px; opacity: 0; }
+}
